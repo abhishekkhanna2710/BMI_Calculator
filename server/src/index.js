@@ -5,7 +5,6 @@ const cors = require('cors');
 const connection = require("./db/Connection.js")
 const userRoutes = require("./Routes/UserRoutes");
 const authRoutes = require("./Routes/Auth");
-const productsRoutes = require("./Routes/ProductsRoutes")
 
 
 //MongoDb Connection
@@ -18,16 +17,16 @@ app.use(cors());
 // router file linked 
 app.use("/api/users", userRoutes)
 app.use("/api/auth", authRoutes)
-app.use("/api/products", productsRoutes)
 
 
 
-const port = process.env.PORT || 5000;
+
+const port = process.env.PORT || 8000;
 
 app.get("/", (req, res) => {
-    res.send("Hello World");
+    res.send("Hello World Bmi ");
 })
 
-app.listen(5000, () => {
+app.listen(8000, () => {
     console.log(`Server has started on localhost//:${port}`)
 })
