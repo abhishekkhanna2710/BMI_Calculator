@@ -1,11 +1,16 @@
-
+import React from "react"
+import { Routes, Route } from "react-router-dom";
+import SignUp from "./Pages/Login/SignUp/SignUp"
 
 function App() {
 
   return (
     <div className="App">
 
-      <h1>Hello World</h1>
+      <Routes>
+        <Route path="/" exact element={<SignUp />} />
+
+      </Routes>
 
     </div>
   )
