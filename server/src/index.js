@@ -5,6 +5,7 @@ const cors = require('cors');
 const connection = require("./db/Connection.js")
 const userRoutes = require("./Routes/UserRoutes");
 const authRoutes = require("./Routes/Auth");
+const BmiRoutes = require("./Routes/Bmi")
 
 
 //MongoDb Connection
@@ -17,6 +18,7 @@ app.use(cors());
 // router file linked 
 app.use("/api/users", userRoutes)
 app.use("/api/auth", authRoutes)
+app.use("/api/calculate-bmi", BmiRoutes)
 
 
 

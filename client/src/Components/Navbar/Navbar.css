@@ -1,0 +1,39 @@
+body {
+    margin: 0 auto;
+}
+
+.navbar {
+    top: 0;
+    left: 0;
+    padding-top: 10px;
+    position: relative;
+    width: 100%;
+    border: 1px solid black;
+    height: 60px;
+    background-color: rgb(2, 10, 48);
+    margin-bottom: 30px;
+}
+
+.Links {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin: 10px 30px;
+    display: flex;
+}
+
+.LinkTag{
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Link {
+    text-decoration: none;
+    color: rgb(255, 162, 1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin: 20px 20px;
+
+}

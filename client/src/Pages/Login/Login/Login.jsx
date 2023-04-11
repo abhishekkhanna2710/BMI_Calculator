@@ -37,7 +37,7 @@ const Login = () => {
             if (data.message === "Logged in Successfully") {
                 alert("Logged in Successfully")
                 console.log(data.message);
-                navigate("/")
+                navigate("/bmi-calculator")
 
             } else if (!data.success) {
                 setError(data.message);
