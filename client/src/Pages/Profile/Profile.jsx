@@ -11,7 +11,7 @@ function Profile() {
     useEffect(() => {
         async function fetchUser() {
             try {
-                const response = await fetch(`http://localhost:8000/api/users/${id}`);
+                const response = await fetch(`https://bmi-bclr.onrender.com/api/users/${id}`);
                 const data = await response.json();
                 setUser(data);
                 console.log(data)

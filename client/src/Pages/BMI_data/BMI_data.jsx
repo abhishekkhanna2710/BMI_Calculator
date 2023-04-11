@@ -5,7 +5,7 @@ function BMI_data() {
     const [bmis, setBmis] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:8000/api/calculate-bmi')
+        fetch('https://bmi-bclr.onrender.com/api/calculate-bmi')
             .then(response => response.json())
             .then(data => setBmis(data))
             .catch(error => console.error(error));

@@ -21,7 +21,7 @@ const SignUp = () => {
         const { name, email, password } = user;
 
         try {
-            const res = await fetch("http://localhost:8000/api/users", {
+            const res = await fetch("https://bmi-bclr.onrender.com/api/users", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

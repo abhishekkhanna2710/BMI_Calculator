@@ -20,7 +20,7 @@ const Login = () => {
         const { email, password } = user;
 
         try {
-            const res = await fetch("http://localhost:8000/api/auth", {
+            const res = await fetch("https://bmi-bclr.onrender.com/api/auth", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

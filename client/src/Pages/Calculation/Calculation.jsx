@@ -17,7 +17,7 @@ function Calculation() {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        const response = await fetch('http://localhost:8000/api/calculate-bmi', {
+        const response = await fetch('https://bmi-bclr.onrender.com/api/calculate-bmi', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
