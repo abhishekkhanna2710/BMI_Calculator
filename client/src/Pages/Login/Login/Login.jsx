@@ -50,6 +50,24 @@ const Login = () => {
     };
 
 
+    // Logout Functionality
+    const handleLogout = async () => {
+        try {
+            await fetch('/api/users/logout', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${localStorage.getItem('token')}` // Include the user's auth token in the request header
+                }
+            });
+            localStorage.removeItem('token');
+            window.location.href = '/';
+        } catch (error) {
+            console.error(error);
+        }
+    };
+
+
     return (
         <div className={LoginStyle.login}>
             <h1>Enter Your Credentials</h1>

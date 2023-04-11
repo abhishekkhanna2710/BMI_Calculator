@@ -19,6 +19,7 @@ app.use(cors());
 app.use("/api/users", userRoutes)
 app.use("/api/auth", authRoutes)
 app.use("/api/calculate-bmi", BmiRoutes)
+app.use("/api/logout", userRoutes)
 
 
 

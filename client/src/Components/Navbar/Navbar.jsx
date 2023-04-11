@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
+    const handleout = (e) => {
+        alert("User Logout Successfully")
+    }
     return (
         <div className="navbar">
 
@@ -12,6 +15,7 @@ function Navbar() {
                 <Link className='Links' to="/bmi-calculator">BMI</Link>
                 <Link className='Links' to="/user-section">Users</Link>
                 <Link className='Links' to="/bmi-data">BMI Data</Link>
+                <Link onClick={handleout} className='Links' to="/">Logout</Link>
             </div>
         </div>
     )

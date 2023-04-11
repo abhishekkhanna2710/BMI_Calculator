@@ -49,4 +49,22 @@ router.get('/:id', async (req, res) => {
     }
 });
 
+
+
+// Logout user
+router.post('/', async (req, res) => {
+    try {
+
+        req.user.tokens = req.user.tokens.filter(token => token.token !== req.token);
+
+
+        await req.user.save();
+
+        res.send('Logged out successfully');
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('Internal server error');
+    }
+});
+
 module.exports = router;
