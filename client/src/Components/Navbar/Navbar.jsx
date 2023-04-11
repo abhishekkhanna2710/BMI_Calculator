@@ -9,8 +9,9 @@ function Navbar() {
             <Link className='Link' to="">BMI Calculator</Link>
             <div className='LinkTag'>
 
-                <Link className='Links' to="/user-section">Users</Link>
                 <Link className='Links' to="/bmi-calculator">BMI</Link>
+                <Link className='Links' to="/user-section">Users</Link>
+                <Link className='Links' to="/bmi-data">BMI Data</Link>
             </div>
         </div>
     )

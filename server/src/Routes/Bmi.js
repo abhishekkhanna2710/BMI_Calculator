@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const Bmi = require("../models/BmiSchema")
+const auth = require("./Auth")
 
 router.post('/', async (req, res) => {
     const { height, weight } = req.body;
@@ -14,6 +15,17 @@ router.post('/', async (req, res) => {
 
     // BMI value
     res.json({ bmi });
+});
+
+
+router.get('/', async (req, res) => {
+    try {
+        const bmis = await Bmi.find({});
+        res.json(bmis);
+    } catch (err) {
+        console.error(err);
+        res.status(500).send('Internal server error');
+    }
 });
 
 
