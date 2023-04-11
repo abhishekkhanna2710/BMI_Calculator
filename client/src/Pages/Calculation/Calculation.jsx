@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Navbar from '../../Components/Navbar/Navbar';
+import "./Calculation.css"
 
 function Calculation() {
     const [height, setHeight] = useState('');
@@ -28,22 +29,33 @@ function Calculation() {
     };
 
     return (
-        <div>
+        <div >
             <Navbar />
-            <form onSubmit={handleSubmit}>
-                <label>
-                    Height (feet):
-                    <input type="number" value={height} onChange={handleHeightChange} />
-                </label>
-                <label>
-                    Weight (kg):
-                    <input type="number" value={weight} onChange={handleWeightChange} />
-                </label>
-                <button type="submit">Calculate BMI</button>
-            </form>
-            {bmi !== null && (
-                <p>Your BMI is {bmi.toFixed(2)}</p>
-            )}
+            <div className='main_bmi'>
+                <h1>BMI Calculator</h1>
+
+                <form className='Bmi_cal' onSubmit={handleSubmit}>
+                    <label>
+                        Height (ft): &nbsp; &nbsp;
+                        <input type="number" value={height} onChange={handleHeightChange} />
+                    </label>
+                    <br />
+                    <label>
+                        Weight (kg): &nbsp;
+                        <input type="number" value={weight} onChange={handleWeightChange} />
+                    </label>
+                    <br />
+                    <div className='btn-top'>
+
+                        <button className='btn' type="submit">Calculate BMI</button>
+                    </div>
+                </form>
+                {bmi !== null && (
+                    <p className='Result'><span style={{ color: "red" }}>Result :</span> Your BMI is {bmi.toFixed(2)}</p>
+                )}
+
+                <img className='imago' src="https://hips.hearstapps.com/hmg-prod/images/1076/bmi-myths-main-1515702962.jpg?crop=1xw:0.786xh;center,top&resize=1200:*" alt="" />
+            </div>
         </div>
     )
 }

@@ -1,0 +1,57 @@
+.main_bmi {
+    width: 27%;
+    margin: auto;
+    padding: 10px;
+}
+
+.main_bmi h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Bmi_cal {
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 83%;
+    background-color: rgba(236, 236, 251, 0.764);
+}
+
+.Bmi_cal input {
+    padding: 3px 16px;
+    margin-top: 10px;
+}
+
+.Bmi_cal label {
+    color: blue;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+    background-color: rgb(5, 5, 89);
+    color: rgb(241, 240, 240);
+    padding: 7px 6px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.btn-top {
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.Result {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.imago {
+    width: 100%;
+    margin-top: 40px;
+}
