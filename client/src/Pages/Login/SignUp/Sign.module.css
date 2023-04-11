@@ -8,8 +8,7 @@
 .Signup h1 {
     text-align: center;
     font-family: sans-serif;
-    color: crimson;
-
+    color: rgb(9, 7, 98);
 }
 
 ::placeholder {
@@ -38,7 +37,7 @@
 
 
 .signButton {
-    background-color: rgb(231, 51, 51);
+    background-color: rgb(6, 4, 86);
     border: none;
     padding: 9px 15px;
     color: white;

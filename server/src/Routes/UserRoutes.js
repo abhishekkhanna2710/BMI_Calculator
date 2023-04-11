@@ -4,10 +4,6 @@ const bcrypt = require('bcrypt');
 const { User, validate } = require("../models/UserSchema");
 
 
-// router.get("/", (req, res) => {
-//     res.send("Hi my project project reloading 2.0.....");
-// })
-
 router.post("/", async (req, res) => {
     try {
         const { error } = validate(req.body);
@@ -37,13 +33,13 @@ router.get('/:id', async (req, res) => {
     try {
         const user = await User.findById(req.params.id);
         console.log(req.params.id)
+        res.status(200).json(user);
+        console.log(user)
 
-        if (!user) {
+        if (user.length == 0) {
             return res.status(404).json({ message: 'User not found' });
         }
 
-        res.status(200).json(user);
-        console.log(user)
     } catch (error) {
         console.error(error.message);
         res.status(500).json({ message: 'Internal server error' });
@@ -55,10 +51,7 @@ router.get('/:id', async (req, res) => {
 // Logout user
 router.post('/', async (req, res) => {
     try {
-
         req.user.tokens = req.user.tokens.filter(token => token.token !== req.token);
-
-
         await req.user.save();
 
         res.send('Logged out successfully');
