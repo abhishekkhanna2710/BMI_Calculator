@@ -40,6 +40,7 @@ const SignUp = () => {
             if (data.message === "User Created Successfully") {
                 console.log(data.message);
                 alert("User Created Successfully")
+                localStorage.setItem('id', data.id);
                 navigate("/login")
 
             } else if (!data.success) {

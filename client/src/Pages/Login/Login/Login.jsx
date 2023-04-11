@@ -20,7 +20,7 @@ const Login = () => {
         const { email, password } = user;
 
         try {
-            const res = await fetch("https://bmi-bclr.onrender.com/api/auth", {
+            const res = await fetch("http://localhost:8000/api/auth", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -37,6 +37,8 @@ const Login = () => {
             if (data.message === "Logged in Successfully") {
                 alert("Logged in Successfully")
                 console.log(data.message);
+                console.log(data)
+                localStorage.setItem('id', data.data);
                 navigate("/bmi-calculator")
 
             } else if (!data.success) {
