@@ -6,7 +6,7 @@ function Navbar() {
     return (
         <div className="navbar">
 
-            <Link className='Link' to="/">BMI Calculator</Link>
+            <Link className='Link' to="">BMI Calculator</Link>
             <div className='LinkTag'>
 
                 <Link className='Links' to="/user-section">Users</Link>

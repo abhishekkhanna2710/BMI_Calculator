@@ -8,7 +8,6 @@ body {
     padding-top: 10px;
     position: relative;
     width: 100%;
-    border: 1px solid black;
     height: 60px;
     background-color: rgb(2, 10, 48);
     margin-bottom: 30px;
@@ -23,12 +22,13 @@ body {
     display: flex;
 }
 
-.LinkTag{
+.LinkTag {
     float: right;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .Link {
     text-decoration: none;
     color: rgb(255, 162, 1);

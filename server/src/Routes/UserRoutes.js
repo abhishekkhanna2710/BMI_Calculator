@@ -4,9 +4,9 @@ const bcrypt = require('bcrypt');
 const { User, validate } = require("../models/UserSchema");
 
 
-router.get("/", (req, res) => {
-    res.send("Hi my project project reloading 2.0.....");
-})
+// router.get("/", (req, res) => {
+//     res.send("Hi my project project reloading 2.0.....");
+// })
 
 router.post("/", async (req, res) => {
     try {
@@ -30,5 +30,23 @@ router.post("/", async (req, res) => {
     }
 })
 
+
+
+// GET all users
+router.get('/:id', async (req, res) => {
+    try {
+        const user = await User.findById(req.params._id);
+
+        if (!user) {
+            return res.status(404).json({ message: 'User not found' });
+        }
+
+        res.json(user);
+        console.log(user)
+    } catch (error) {
+        console.error(error.message);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+});
 
 module.exports = router;
