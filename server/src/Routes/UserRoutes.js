@@ -32,16 +32,17 @@ router.post("/", async (req, res) => {
 
 
 
-// GET all users
+// GET one users
 router.get('/:id', async (req, res) => {
     try {
-        const user = await User.findById(req.params._id);
+        const user = await User.findById(req.params.id);
+        console.log(req.params.id)
 
         if (!user) {
             return res.status(404).json({ message: 'User not found' });
         }
 
-        res.json(user);
+        res.status(200).json(user);
         console.log(user)
     } catch (error) {
         console.error(error.message);

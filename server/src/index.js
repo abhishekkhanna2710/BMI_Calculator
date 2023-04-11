@@ -17,6 +17,7 @@ app.use(cors());
 
 // router file linked 
 app.use("/api/users", userRoutes)
+app.use("/api/users/:id", userRoutes)
 app.use("/api/auth", authRoutes)
 app.use("/api/calculate-bmi", BmiRoutes)
 app.use("/api/logout", userRoutes)
