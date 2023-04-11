@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import Navbar from '../../Components/Navbar/Navbar';
+import "./Profile.css"
 
 
 function Profile() {
@@ -26,8 +28,9 @@ function Profile() {
     }
 
     return (
-        <div>
-            <h1>User Profile</h1>
+        <div className='profile'>
+            <Navbar />
+            <h1 >User Profile</h1>
             <p>Name: {user.name}</p>
             <p>Email: {user.email}</p>
         </div>

@@ -15,7 +15,7 @@ function Navbar() {
                 <Link className='Links' to="/bmi-calculator">BMI</Link>
                 <Link className='Links' to="/user-section">Users</Link>
                 <Link className='Links' to="/bmi-data">BMI Data</Link>
-                <Link onClick={handleout} className='Links' to="/">Logout</Link>
+                <Link onClick={handleout} className='Loglink' to="/">Logout</Link>
             </div>
         </div>
     )

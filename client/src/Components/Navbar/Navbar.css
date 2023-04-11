@@ -34,6 +34,19 @@ body {
     color: rgb(255, 162, 1);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
-    margin: 20px 20px;
+    margin: 40px 20px;
+    /* margin-top: 20px!important; */
+    position: relative;
+    top: 11px;
+}
 
+.Loglink{
+    background-color: brown;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:18px;
+    margin: 10px 30px;
+    text-decoration: none;
+    padding: 4px 8px;
+    border-radius: 5px;
 }
