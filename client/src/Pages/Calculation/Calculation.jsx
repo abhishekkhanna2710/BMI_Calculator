@@ -51,7 +51,7 @@ function Calculation() {
                     </div>
                 </form>
                 {bmi !== null && (
-                    <p className='Result'><span style={{ color: "red" }}>Result :</span> Your BMI is {bmi.toFixed(2)}</p>
+                    <p className='Result'><span style={{ color: "red" }}>Result :</span> Your BMI is {bmi.toFixed(2)} kg/m2</p>
                 )}
 
                 <img className='imago' src="https://hips.hearstapps.com/hmg-prod/images/1076/bmi-myths-main-1515702962.jpg?crop=1xw:0.786xh;center,top&resize=1200:*" alt="" />

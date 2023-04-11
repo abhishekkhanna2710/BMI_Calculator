@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from '../../Components/Navbar/Navbar';
+import "./BMI.css"
 function BMI_data() {
     const [bmis, setBmis] = useState([]);
 
@@ -11,16 +12,16 @@ function BMI_data() {
     }, []);
 
     return (
-        <div>
+        <div className='Bmi_data'>
             <Navbar />
-            <h1>BMI History</h1>
-            <table>
+            <h1>BMI Data</h1>
+            <table className="table-style">
                 <thead>
                     <tr>
                         <th>Sr No</th>
                         <th>Height (ft)</th>
                         <th>Weight (kg)</th>
-                        <th>BMI</th>
+                        <th>BMI (kg/m2)</th>
                     </tr>
                 </thead>
                 <tbody>
