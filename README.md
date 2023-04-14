@@ -24,7 +24,7 @@ The deploy link for users https://bmicalcultor.netlify.app/
 ![Screenshot 2023-04-11 202743](https://user-images.githubusercontent.com/113687128/232035141-99f31100-d597-4b94-9a4b-cf892b1d6a75.png)
 
 
-<h2>Set your Height and Weright and click submit</h2>
+<h2>Set your Height and Weight and click submit</h2>
 
 ![Screenshot 2023-04-11 202801](https://user-images.githubusercontent.com/113687128/232035285-0e194194-13c1-428b-819e-8aeedc864654.png)
 
